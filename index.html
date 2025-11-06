@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>新北市模型店推薦</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#ef7f1a;--muted:#9aa4b2;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter, system-ui, -apple-system, "Helvetica Neue", "Noto Sans TC", "微軟正黑體", Arial; margin:0; background:linear-gradient(180deg,#071227 0%, #071b2b 100%); color:#e6eef6}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:18px}
+    .brand{display:flex;flex-direction:column}
+    h1{margin:0;font-size:clamp(20px,3.2vw,34px)}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:24px}
+    .card{background:var(--card);border-radius:14px;padding:14px;box-shadow:0 6px 30px rgba(2,6,23,0.6);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.03)}
+    .thumb{width:100%;height:160px;border-radius:10px;object-fit:cover;background:linear-gradient(90deg,#102433,#13364a)}
+    .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+    .name{font-weight:700;font-size:16px}
+    .addr{color:var(--muted);font-size:13px;margin-top:8px}
+    .desc{color:var(--muted);font-size:14px;margin-top:10px;line-height:1.45}
+    .btns{margin-top:12px;display:flex;gap:8px}
+    a.btn{padding:8px 10px;border-radius:8px;text-decoration:none;font-weight:600;background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));color:#e6eef6;border:1px solid rgba(255,255,255,0.04);font-size:13px}
+    a.primary{background:linear-gradient(90deg,var(--accent),#ffb36b);color:#08121a;border:none}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:520px){.thumb{height:140px}}
+    .tag{display:inline-block;padding:6px 8px;border-radius:999px;background:var(--glass);color:var(--muted);font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#ff8a00,#ff3b8d);display:flex;align-items:center;justify-content:center;font-weight:800;color:#08121a">NT</div>
+      <div class="brand">
+        <h1>新北市模型店｜五家快速導覽</h1>
+        <p class="lead">精選新北市內 5 間模型／公仔／GK 店面。點擊按鈕可開啟地圖或前往商家網站。</p>
+      </div>
+    </header>
+
+    <main class="grid" aria-live="polite">
+      <!-- Card 1 -->
+      <article class="card">
+        <img class="thumb" src="https://c22225860.xwing.com.tw/upload/product/20240606182406949.jpg" alt="名展模型玩具行">
+        <div class="meta">
+          <div>
+            <div class="name">名展模型玩具行（中和）</div>
+            <div class="addr">地址：中和區員山路 114 號</div>
+          </div>
+          <div class="tag">綜合模型</div>
+        </div>
+        <div class="desc">豐富的鋼彈、組裝模型與景品選擇，適合想一次逛完多種類型模型的玩家。建議出發前打電話確認庫存。</div>
+        <div class="btns">
+          <a class="btn" href="https://c22225860.xwing.com.tw" target="_blank" rel="noopener">店家網站</a>
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E5%92%8C%E5%8D%80+%E5%93%A1%E5%B1%B1%E8%B7%AF+114" target="_blank" rel="noopener">開啟地圖</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <img class="thumb" src="https://bandaihobby.tw/wp-content/uploads/2023/03/AF1QipPaHs2I5qCi_5fHGxnQqx8NSFvlT0b4_8q0znvEs1360-w1360-h1020.jpeg" alt="模型格納庫 HobbyGarage">
+        <div class="meta">
+          <div>
+            <div class="name">模型格納庫 HobbyGarage（新莊）</div>
+            <div class="addr">地址：新莊區新泰路 11 號</div>
+          </div>
+          <div class="tag">鋼彈專區</div>
+        </div>
+        <div class="desc">鋼彈模型選擇豐富，也販售顏料、工具與改件。較適合鋼彈迷和需要大量周邊工具的玩家。</div>
+        <div class="btns">
+          <a class="btn" href="https://bandaihobby.tw/%E6%A8%A1%E5%9E%8B%E6%A0%BC%E7%B4%8D%E5%BA%AB-hobbygarage/" target="_blank" rel="noopener">介紹頁</a>
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=%E6%96%B0%E8%8E%8A%E5%8D%80+%E6%96%B0%E6%B3%B0%E8%B7%AF+11" target="_blank" rel="noopener">開啟地圖</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <img class="thumb" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgP-k5oEBjrfb2V6GDJSe8Zgnkoke9-q08Ylnlyhb_1Xj7eGIFq5QmwlD-6fdDJhW-e-skgeCiMuHISyiE06IW05HFG2pJhKE9DDd7-q3xq7SRD3RpQe2qOnXHoUzAK-rslTlqBMmQpSBXi/s640/001.jpg" alt="MR.JOE HOBBY">
+        <div class="meta">
+          <div>
+            <div class="name">MR.JOE HOBBY（淡水）</div>
+            <div class="addr">地址：淡水區中山北路二段 171 號</div>
+          </div>
+          <div class="tag">模型課程</div>
+        </div>
+        <div class="desc">專注組裝模型與鋼彈，並提供模型製作教室與專業工具，是喜歡慢工細活玩家的好去處。</div>
+        <div class="btns">
+          <a class="btn" href="https://store.mrjoe.com.tw" target="_blank" rel="noopener">線上商店</a>
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=%E6%B7%A1%E6%B0%B4%E5%8D%80+%E4%B8%AD%E5%B1%B1%E5%8C%97%E8%B7%AF+171" target="_blank" rel="noopener">開啟地圖</a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card">
+        <img class="thumb" src="https://truth.bahamut.com.tw/s01/202509/92b8833167718c21858d299785948d64.JPG" alt="PLUS TOYS 普拉斯玩具">
+        <div class="meta">
+          <div>
+            <div class="name">PLUS TOYS 普拉斯（蘆洲）</div>
+            <div class="addr">地址：蘆洲區信義路 160 號</div>
+          </div>
+          <div class="tag">親子／入門</div>
+        </div>
+        <div class="desc">玩具與模型混合經營，選品親民、適合親子或模型新手逛街購買入門款式。</div>
+        <div class="btns">
+          <a class="btn" href="https://www.facebook.com/p/PLUS-TOYS-%E6%99%AE%E6%8B%89%E6%96%AF%E7%8E%A9%E5%85%B7%E5%BA%97-100064269241741/" target="_blank" rel="noopener">FB 粉專</a>
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=%E8%98%A6%E6%B4%B2%E5%8D%80+%E4%BF%A1%E7%BE%A9%E8%B7%AF+160" target="_blank" rel="noopener">開啟地圖</a>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card">
+        <img class="thumb" src="https://d37w6prdd1grkb.cloudfront.net/businessImg/tas20221128011_6.jpg" alt="SCC 玩具屋">
+        <div class="meta">
+          <div>
+            <div class="name">SCC 玩具屋（GK／三重）</div>
+            <div class="addr">地址：三重區成功路 73 巷 38 號</div>
+          </div>
+          <div class="tag">GK / 進階</div>
+        </div>
+        <div class="desc">以 GK 與收藏級模型為主，適合進階玩家尋找稀有件與專業改造材料。</div>
+        <div class="btns">
+          <a class="btn" href="https://www.scctoys.com.tw" target="_blank" rel="noopener">店家網站</a>
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=%E4%B8%89%E9%87%8D%E5%8D%80+%E6%88%90%E5%8A%9F%E8%B7%AF+73+%E5%B7%B7+38" target="_blank" rel="noopener">開啟地圖</a>
+        </div>
+      </article>
+
+    </main>
+
+    <footer>
+      已為你產生一個單頁展示，包含店家介紹、聯絡與地圖快速連結。若要我把這個檔案輸出成 HTML 檔或加入更多店家／搜尋功能，我可以直接幫你加上下載按鈕或後端 JSON 資料來源。
+    </footer>
+  </div>
+</body>
+</html>
